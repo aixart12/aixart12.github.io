@@ -95,12 +95,12 @@ section{
 
 .header .navbar a{
     font-size: 1.7rem;
-    color: var(--light-color);
+    color: #1f1ab8;
     margin-left: 2rem;
 }
 
 .header .navbar a:hover{
-    color:var(--main-color);
+    color: #0c0966;
 }
 
 #menu-btn{
