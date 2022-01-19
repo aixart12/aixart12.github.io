@@ -12,6 +12,28 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
+<!-- Email script  -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TMD5CJ2LZR"></script>
+<script type="text/javascript">
+          function sendMail(params){
+            var tempParams = {
+                from_name: document.getElementById("sendername").value,
+                to_name: document.getElementById("senderemail").value,
+                message: document.getElementById("sendermessage").value
+            };
+            emailjs.send('gmail','template1',tempParams)
+            .then(function(res) {
+                        console.log('SUCCESS!',res.status);
+                    })
+        }
+</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_f6tdvpRQrel2iZ01O0mJK");
+    })();
+    </script>
+
 </head>
 <body>
     
@@ -82,7 +104,11 @@
         <div class="box">
             <img src="images/s3.png" alt="">
             <h3>web hosting</h3>
+<<<<<<< HEAD
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, animi?</p>
+=======
             <p>Helping you host your powerful applications run on our servers and be accessible 99.99% of the time globally.</p>
+>>>>>>> 7a71f7d3c23e8d3353cbd0a4a17800f1851ad3bb
             <!-- <a href="#" class="btn">learn more</a> -->
         </div>
 
@@ -378,11 +404,11 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15565.309326788081!2d77.702808!3d12.7572419!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c2acf9da932b048!2sVBHC%20Vaibhava!5e0!3m2!1sen!2sin!4v1642596136799!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
 
         <form action="">
-            <input type="text" placeholder="Name" class="box">
-            <input type="email" placeholder="Email" class="box">
-            <input type="number" placeholder="Number" class="box">
-            <textarea name="" placeholder="Message" class="box" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="Send" class="btn">
+            <input type="text" placeholder="Name" id="sendername" class="box">
+            <input type="email" placeholder="Email" id="senderemail" class="box">
+            <!-- <input type="number" placeholder="Number" class="box"> -->
+            <textarea name="" placeholder="Message" id="sendermessage" class="box" id="" cols="30" rows="10"></textarea>
+            <input type="submit" onclick="sendMail('sendername','senderemail','sendermessage')" value="Send" class="btn">
         </form>
 
     </div>
