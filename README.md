@@ -1,1 +1,2 @@
-# aixart12.github.io
+# Yayy! its live.
+## give it a try --> [aixart](aixart.in)
