@@ -1,2 +1,2 @@
 # Yayy! its live.
-## give it a try --> [aixart](aixart.in)
+## give it a try --> [aixart](https://aixart.in)
